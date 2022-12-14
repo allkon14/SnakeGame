@@ -1,0 +1,9 @@
+﻿canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+('html, body').css({
+    overflow: 'hidden',
+    height: '100%'
+});

@@ -1,0 +1,15 @@
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\ORMDal.deps.json
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\ORMDal.dll
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\ORMDal.pdb
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.csproj.AssemblyReference.cache
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.AssemblyInfoInputs.cache
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.AssemblyInfo.cs
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.csproj.CoreCompileInputs.cache
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.csproj.CopyComplete
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.dll
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.pdb

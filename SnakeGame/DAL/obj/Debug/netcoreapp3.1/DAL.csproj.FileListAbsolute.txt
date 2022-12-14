@@ -1,0 +1,15 @@
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
