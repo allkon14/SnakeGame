@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3mZEZWOEZe4qppmFdY8YsVABJ5DVgCB2+2JAUwKgGz2Csmxc/yjtXR6ZD1MQXuXLYXg5zBPT22/G1dYRYNEDIw==",
+  "dgSpecHash": "XgyS1pR/fu901J+pt7a064GHMc8NaViK906kLYHsAnILS+Czaeu6dgIQSkurZsb5+0Y4mLcorb6gtVBvo53NZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Interfaces\\Interfaces.csproj",
+  "projectFilePath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Interfaces\\Interfaces.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Алёна\\.nuget\\packages\\jquery\\1.4.4\\jquery.1.4.4.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -24,6 +25,7 @@
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.jquery.unobtrusive.ajax\\3.1.0\\microsoft.jquery.unobtrusive.ajax.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"

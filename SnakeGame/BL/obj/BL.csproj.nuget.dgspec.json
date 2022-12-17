@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\BL\\BL.csproj": {}
+    "C:\\SnakeGame\\SnakeGame\\SnakeGame\\BL\\BL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\BL\\BL.csproj": {
+    "C:\\SnakeGame\\SnakeGame\\SnakeGame\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\BL\\BL.csproj",
+        "projectPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\Алёна\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\BL\\obj\\",
+        "outputPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,11 +34,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\Entities.csproj"
+              "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Interfaces\\Interfaces.csproj"
+              "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -62,6 +62,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -83,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\Entities.csproj": {
+    "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\Entities.csproj",
+        "projectPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Алёна\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\obj\\",
+        "outputPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -134,6 +138,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -155,14 +163,14 @@
         }
       }
     },
-    "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Interfaces\\Interfaces.csproj": {
+    "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Interfaces\\Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Interfaces\\Interfaces.csproj",
+        "projectPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Interfaces\\Interfaces.csproj",
         "packagesPath": "C:\\Users\\Алёна\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Interfaces\\obj\\",
+        "outputPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -185,8 +193,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\Entities\\Entities.csproj"
+              "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\Entities\\Entities.csproj"
               }
             }
           }
@@ -208,6 +216,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
               "target": "Package",
               "version": "[3.1.0, )"
             }

@@ -9,12 +9,14 @@
       "Entities/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.0",
-          "Microsoft.EntityFrameworkCore.Tools": "3.1.0"
+          "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
+          "Microsoft.jQuery.Unobtrusive.Ajax": "3.1.0"
         },
         "runtime": {
           "Entities.dll": {}
         }
       },
+      "jQuery/1.4.4": {},
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -208,6 +210,11 @@
           }
         }
       },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.1.0": {
+        "dependencies": {
+          "jQuery": "1.4.4"
+        }
+      },
       "System.Collections.Immutable/1.7.0": {},
       "System.ComponentModel.Annotations/4.7.0": {},
       "System.Diagnostics.DiagnosticSource/4.7.0": {}
@@ -218,6 +225,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "jQuery/1.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kexCeYIZehR5fRjo8CK1sngN5SZEQRFNfCYZHMS1RxwEEiSKetBw/gliYJcLJdJEBB+e9aHqleLCjuaSI7u23g==",
+      "path": "jquery/1.4.4",
+      "hashPath": "jquery.1.4.4.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",
@@ -358,6 +372,13 @@
       "sha512": "sha512-LEKAnX7lhUhSoIc2XraCTK3M4IU/LdVUzCe464Sa4+7F4ZJuXHHRzZli2mDbiT4xzAZhgqXbvfnb5+CNDcQFfg==",
       "path": "microsoft.extensions.primitives/3.1.0",
       "hashPath": "microsoft.extensions.primitives.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wkOpPvMDiDtfQ7XcIUQ1Y89WenosvN5LXmm3/geHmV7Bz8SmvSkXOfGbzivSJJLHflWciNbr3F7pVtqAq7hJCQ==",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.1.0",
+      "hashPath": "microsoft.jquery.unobtrusive.ajax.3.1.0.nupkg.sha512"
     },
     "System.Collections.Immutable/1.7.0": {
       "type": "package",

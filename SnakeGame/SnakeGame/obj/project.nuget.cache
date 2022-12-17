@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i561uvxXHoTJsoD6xrRqKl03WrmSGvcGYgZrwU6wyh5TDydJxtKWujMUfb6qQauSuXsGU1UEbdvRAR3fkMPBgg==",
+  "dgSpecHash": "jcjGwPfuDFhz3BvyQ4Pdv7NoHvMqR1G0cEToNoLAcoxIZnF0rK/35OvEOE9cPslMSag+n9zGKaVEDZIwjl5cwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\SnakeGame\\SnakeGame.csproj",
+  "projectFilePath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\SnakeGame\\SnakeGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Алёна\\.nuget\\packages\\hangfire.core\\1.7.32\\hangfire.core.1.7.32.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\hangfire.sqlserver\\1.7.32\\hangfire.sqlserver.1.7.32.nupkg.sha512",
+    "C:\\Users\\Алёна\\.nuget\\packages\\jquery\\1.4.4\\jquery.1.4.4.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\json\\1.0.1\\json.1.0.1.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -30,6 +31,7 @@
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
+    "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.jquery.unobtrusive.ajax\\3.1.0\\microsoft.jquery.unobtrusive.ajax.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",

@@ -6,13 +6,13 @@ const canvas = document.getElementById("game")
 const ctx = canvas.getContext("2d")
 
 const background = new Image();
-background.src = "https://localhost:44314/img/background.jpg";
+background.src = "https://localhost:44390/img/background.jpg";
 
 const apple_img = new Image(); // Создание объекта
-apple_img.src = "https://localhost:44314/img/icon_apple.png"; // Указываем нужное изображение
+apple_img.src = "https://localhost:44390/img/icon_apple.png"; // Указываем нужное изображение
 
 const treat_img = new Image(); // Создание объекта
-treat_img.src = "https://localhost:44314/img/icon_treat.png"; // Указываем нужное изображение
+treat_img.src = "https://localhost:44390/img/icon_treat.png"; // Указываем нужное изображение
 
 
 let step = 48;
@@ -30,8 +30,8 @@ let treat = {
 
 let snake = [];
 snake[0] = {
-    // x: 20 * step,
-    // y: 10 * step
+    ////// x: 20 * step,
+    ////// y: 10 * step
     x: Math.floor(Math.random() * 25 + 1) * step, // формирует значение от 1 до 25(кол-во элементов в сторке фон)
     y: Math.floor(Math.random() * 12 + 3) * step,
 };
@@ -66,7 +66,7 @@ function edge(head) {
         || head.y < 2 * step || head.y > step * 20 + step * 0.5) {
         ctx.fillStyle = "red";
         ctx.fillRect(snake[0].x, snake[0].y, step, step);
-        //clearInterval(game);
+        /////clearInterval(game);
         return true;
 
     }
@@ -86,14 +86,14 @@ function draw_elements() {
         || snake[0].y < 2 * step || snake[0].y > step * 20 + step * 0.5) {
         ctx.fillStyle = "red";
         ctx.fillRect(snake[0].x, snake[0].y, step, step);
-        //clearInterval(game);
+        /////clearInterval(game);
 
 
-        setTimeout(function () {
-            alert("GAME OVER!");
-        }, 10);
-        document.location.reload();
-        //clearInterval(game);
+        //setTimeout(function () {
+        //    alert("GAME OVER!");
+        //}, 10);
+        //document.location.reload();
+        ////clearInterval(game);
 
     }
 
@@ -117,14 +117,14 @@ function draw_elements() {
         || snake[0].y < 2 * step || snake[0].y > step * 20 + step * 0.5) {
         ctx.fillStyle = "red";
         ctx.fillRect(snake[0].x, snake[0].y, step, step);
-        //clearInterval(game);
+        ////clearInterval(game);
 
 
-        setTimeout(function () {
-            alert("GAME OVER!");
-        }, 10);
-        document.location.reload();
-        //clearInterval(game);
+        //setTimeout(function () {
+        //    alert("GAME OVER!");
+        //}, 10);
+        //document.location.reload();
+        ///clearInterval(game);
 
     }
 
@@ -154,9 +154,11 @@ function draw_elements() {
 
 
     if (eatTail(newHead, snake) || edge(newHead)) {
-        setTimeout(function () {
-            alert("GAME OVER!");
-        }, 10);
+        var xhttp = new XMLHttpRequest();
+
+        //setTimeout(function () {
+        //    alert("GAME OVER!");
+        //}, 10);
         document.location.reload();
         //clearInterval(game);
 
@@ -165,8 +167,8 @@ function draw_elements() {
     snake.unshift(newHead); //поместить в начало
 
     if (score == 10 || score == 22 || score == 35 || snake.length > 30) {
-        //    if (store == s){
-        //while (snakeX != treat.x && snakeY != treat.y){
+        ////    if (store == s){
+        ////while (snakeX != treat.x && snakeY != treat.y){
         ctx.drawImage(treat_img, treat.x, treat.y)//}
         if (snakeX == treat.x && snakeY == treat.y) {
             score += 2;
@@ -182,6 +184,6 @@ function draw_elements() {
 
 }
 
-let game = setInterval(draw_elements, 100) //каждые 100 мс будет перерисовавоться фон
+let game = setInterval(draw_elements, 150) //каждые 100 мс будет перерисовавоться фон
 
 

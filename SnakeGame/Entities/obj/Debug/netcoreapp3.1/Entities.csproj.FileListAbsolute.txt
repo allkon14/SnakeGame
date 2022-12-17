@@ -11,3 +11,16 @@ C:\Users\Алёна\source\repos\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Enti
 C:\Users\Алёна\source\repos\SnakeGame\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
 C:\Users\Алёна\source\repos\SnakeGame\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
 C:\Users\Алёна\source\repos\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\SnakeGame\SnakeGame\SnakeGame\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache

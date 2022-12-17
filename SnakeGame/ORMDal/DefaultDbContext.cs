@@ -7,6 +7,9 @@ namespace ORMDal
     {
         public DbSet<User> Users { get; set; }
 
+        public virtual DbSet<Games> Games { get; set; }
+        public virtual DbSet<Orders> Orders { get; set; }
+
         public DefaultDbContext()
         {
         }
@@ -30,14 +33,14 @@ namespace ORMDal
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Games>(entity =>
-            {
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.Games)
-                    .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Games_UserId");
-            });
+            //modelBuilder.Entity<Games>(entity =>
+            //{
+            //    entity.HasOne(d => d.User)
+            //        .WithMany(p => p.Games)
+            //        .HasForeignKey(d => d.Name)
+            //        .OnDelete(DeleteBehavior.ClientSetNull)
+            //        .HasConstraintName("FK_Games_Name");
+            //});
 
             modelBuilder.Entity<Orders>(entity =>
             {
@@ -53,9 +56,9 @@ namespace ORMDal
                 entity.Property(e => e.Name).IsRequired();
             });
 
-           // OnModelCreatingPartial(modelBuilder);
+            //OnModelCreatingPartial(modelBuilder);
         }
 
-       // partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        //partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

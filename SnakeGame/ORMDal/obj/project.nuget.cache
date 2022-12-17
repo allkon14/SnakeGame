@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ffxp5Q458UfaB2QEf+DEq9qox3HwHTqd7Oqwp8RGDCXTBkfOkzXVhtpLk5UQsmHpI+4b+ohYyI80TyTcMa0CzQ==",
+  "dgSpecHash": "qMiSHCFs/RkjBRT1UPevYxjnGHfYcN6eYxlQ7rDUqwtPlInc6ES4m6ee4tcczJBu3WkcExXauKcHvzkpuhgG0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Алёна\\source\\repos\\SnakeGame\\ORMDal\\ORMDal.csproj",
+  "projectFilePath": "C:\\SnakeGame\\SnakeGame\\SnakeGame\\ORMDal\\ORMDal.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Алёна\\.nuget\\packages\\jquery\\1.4.4\\jquery.1.4.4.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -27,6 +28,7 @@
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
+    "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.jquery.unobtrusive.ajax\\3.1.0\\microsoft.jquery.unobtrusive.ajax.3.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Алёна\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
