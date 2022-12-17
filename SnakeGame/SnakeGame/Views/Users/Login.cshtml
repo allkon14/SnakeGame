@@ -1,4 +1,6 @@
-﻿@model SnakeGame.Models.Users.LoginModel
+﻿@using SnakeGame.Models.Users
+@model SnakeGame.Models.Users.LoginModel
+
 введите логин и пароль
 <form asp-controller="Users" asp-action="Login" asp-antiforgery="true" method="post">
     <div class="input-group mb-3">
@@ -29,4 +31,6 @@
             <button type="submit" class="btn btn-primary btn-block">Войти</button>
         </div>
     </div>
+    <a asp-action="Create">Добавить пользователя</a>
+   
 </form>

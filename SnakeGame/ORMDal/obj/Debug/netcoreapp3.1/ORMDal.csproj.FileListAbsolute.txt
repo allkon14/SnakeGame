@@ -10,6 +10,9 @@ C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal
 C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.AssemblyInfoInputs.cache
 C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.AssemblyInfo.cs
 C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.csproj.CoreCompileInputs.cache
-C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.csproj.CopyComplete
 C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.dll
 C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.pdb
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\ORMDal.runtimeconfig.json
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\bin\Debug\netcoreapp3.1\ORMDal.runtimeconfig.dev.json
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.genruntimeconfig.cache
+C:\Users\Алёна\source\repos\SnakeGame\ORMDal\obj\Debug\netcoreapp3.1\ORMDal.csproj.CopyComplete

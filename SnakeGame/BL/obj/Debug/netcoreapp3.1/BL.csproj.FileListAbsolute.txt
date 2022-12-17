@@ -10,6 +10,9 @@ C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.Generat
 C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.AssemblyInfoInputs.cache
 C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.AssemblyInfo.cs
 C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.csproj.CoreCompileInputs.cache
-C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.csproj.CopyComplete
 C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.dll
 C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.pdb
+C:\Users\Алёна\source\repos\SnakeGame\BL\bin\Debug\netcoreapp3.1\BL.runtimeconfig.json
+C:\Users\Алёна\source\repos\SnakeGame\BL\bin\Debug\netcoreapp3.1\BL.runtimeconfig.dev.json
+C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.csproj.CopyComplete
+C:\Users\Алёна\source\repos\SnakeGame\BL\obj\Debug\netcoreapp3.1\BL.genruntimeconfig.cache

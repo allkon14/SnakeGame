@@ -24,5 +24,9 @@ namespace BL
         {
             return _dal.GetById(id);
         }
+        public List<User> GetAllUsers()
+        {
+            return _dal.GetAllUsers();
+        }
     }
 }

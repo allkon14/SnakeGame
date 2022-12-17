@@ -10,6 +10,9 @@ C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.Gener
 C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
 C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
 C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
-C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
 C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+C:\Users\Алёна\source\repos\SnakeGame\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache
+C:\Users\Алёна\source\repos\SnakeGame\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete

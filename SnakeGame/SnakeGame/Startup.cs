@@ -24,17 +24,7 @@ namespace SnakeGame
         // получаем данные из строки в файле dbsettings.json
         private IConfigurationRoot _confstring;
 
-        public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnv)
-        {
-            _confstring = new ConfigurationBuilder().SetBasePath(hostEnv.ContentRootPath).AddJsonFile("dbsettings.json").Build();
-        }
-
-
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
+        
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -51,21 +41,13 @@ namespace SnakeGame
 
             services.AddControllersWithViews();
 
-            // ровно один экземпляр
-            //services.AddSingleton<IUsersDal>(new UsersDal());
-
-            // создает новый экземпляр для каждого места в коде, где необхдима реализация
+            
 
             services.AddTransient<IUsersDal, OrmUsersDal>();
             services.AddTransient<IUsersBL, UsersBL>();
 
 
-            // подключаем файл json и работу с ним
-
-            //services.AddDbContext<AppDbContent>(options => options.UseSqlServer(_confstring.GetConnectionString("DefaultConnection")));
-
-            // создает один экземпляр в рамках http запроса
-            //services.AddScoped<IUsersDal, UsersDal>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -93,7 +75,7 @@ namespace SnakeGame
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Users}/{action=Login}/{id?}");
             });
         }
     }

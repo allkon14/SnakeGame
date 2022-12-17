@@ -10,6 +10,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Entities;
+using System.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace SnakeGame.Controllers
 {
@@ -23,7 +27,17 @@ namespace SnakeGame.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var users = _bl.GetAllUsers();
+
+            //if (users != null)
+            //{
+            //    return View(users.ToString());
+            //}
+            //else
+            //{
+            //    return View();
+            //}
+            return View(users);
         }
 
         [HttpGet]
@@ -31,18 +45,27 @@ namespace SnakeGame.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginModel loginModel)
         {
             var user = _bl.GetByLogin(loginModel.Login);
 
-            if (user != null && user.Password == loginModel.Password)
+            if (user != null && user.Password.TrimEnd() == loginModel.Password.TrimEnd())
             {
                 var identity = new CustomUserIdentity(user);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                return RedirectToAction("Test", "Home");
+
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Users");
+
         }
 
 
@@ -52,7 +75,7 @@ namespace SnakeGame.Controllers
 
             if (user != null)
             {
-                return View(new UserModel() { Id = user.Id, FullName = $"{user.Name} {user.Phone}" });
+                return View(new UserModel() { Id = user.Id, FullName = $"{user.Name} {user.Password}" });
             }
             else
             {
@@ -60,6 +83,59 @@ namespace SnakeGame.Controllers
             }
 
         }
+
+
+        public IActionResult GetAllUsers()
+        {
+            var users = _bl.GetAllUsers();
+
+            if (users != null)
+            {
+                return View(users.ToString());
+            }
+            else
+            {
+                return View();
+            }
+
+        }
+
+
+
+        //public IDbConnection Connection
+        //{
+        //    get
+        //    {
+        //        return UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Integrated security=True;Initial Catalog=SnakeGame");
+
+        //    }
+        //}
+
+        //private List<User> GetAllUsers()
+        //{
+        //    using(IDbConnection db = Connection)
+        //    {
+
+        //    }
+        //}
+
+
+        // public IActionResult Save() => PartialView();
+
+
+        //[HttpGet]
+        //public ActionResult Register()
+        //{
+        //    var newUser = new User();
+        //    return View(newUser);
+        //}
+
+        //[HttpPost]
+        //public ActionResult Register(User user)
+        //{
+        //    return View(user);
+        //}
+
 
     }
 }

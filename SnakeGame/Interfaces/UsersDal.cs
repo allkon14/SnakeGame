@@ -1,5 +1,6 @@
 ﻿using Entities;
 using System;
+using System.Collections.Generic;
 
 namespace Interfaces
 {
@@ -7,5 +8,6 @@ namespace Interfaces
     {
         User GetById(int id);
         User GetByLogin(string login);
+        List<User> GetAllUsers();
     }
 }
