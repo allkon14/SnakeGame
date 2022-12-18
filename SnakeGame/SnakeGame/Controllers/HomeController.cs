@@ -9,17 +9,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SnakeGame.Models.Users;
-using ORMDal;
+//using ORMDal;
+using Interfaces;
+using Entities;
+using SnakeGame.Models.Games;
 
 namespace SnakeGame.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private IUsersBL _userBL;
+        private IGameBL _gameBL;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUsersBL userBL, IGameBL gameBL)
         {
             _logger = logger;
+            _userBL = userBL;
+            _gameBL = gameBL;
         }
 
         //private LoginContext db;
@@ -30,7 +37,8 @@ namespace SnakeGame.Controllers
 
 
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
+        [Authorize]
         public IActionResult Index(int id, string name)
         {
             TempData["Success"] = "Success";
@@ -45,30 +53,19 @@ namespace SnakeGame.Controllers
 
         public IActionResult Privacy()
         {
-            return Json(new { Id = 1, Name = "Andrey" });
+            return Json(new { Id = 1, Name = "Alena" });
         }
 
-        public IActionResult Test()
-        {
-            return View("Test");
-        }
-
-        //public async Task<IActionResult> Show()
+        //public IActionResult Test()
         //{
-        //    return View(await db.Logins.ToListAsync()); //получаем объект из БД, создаем список
+        //    return View("Test");
         //}
-        public IActionResult Create()
-        {
-            return View();
-        }
-        //[HttpPost]
-        //public async Task<IActionResult> Create(LoginModel user) //добавляем новый объект
-        //{
 
-        //    db.Logins.Add(user);
-        //    await db.SaveChangesAsync();
-        //    return RedirectToAction("Index");
+        //public IActionResult Create()
+        //{
+        //    return View();
         //}
+
 
         public IActionResult Info()
         {
@@ -79,6 +76,38 @@ namespace SnakeGame.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
+
+
+        [HttpGet]
+        //[Authorize]
+        public IActionResult Game()///////////
+        {
+            Game newGame = new Game();
+            GameModel gameModel = new GameModel()
+            {
+                Score = 0,
+                GameDate = DateTime.Now,
+                UserId = _userBL.GetByLogin(User.Identity.Name).Id
+            };
+            return View(gameModel);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult SaveGame(int score)
+        {
+            Game game = new Game()
+            {
+                Score = score,
+                GameDate = DateTime.Now,
+                UserId = _userBL.GetByLogin(User.Identity.Name).Id
+            };
+            _gameBL.PutGame(game);
+
+            return RedirectToAction("Game", "Home");
         }
     }
 }

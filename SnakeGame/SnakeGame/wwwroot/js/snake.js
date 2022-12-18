@@ -2,6 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
 const canvas = document.getElementById("game")
 const ctx = canvas.getContext("2d")
 
@@ -14,6 +15,7 @@ apple_img.src = "https://localhost:44390/img/icon_apple.png"; // Указыва�
 const treat_img = new Image(); // Создание объекта
 treat_img.src = "https://localhost:44390/img/icon_treat.png"; // Указываем нужное изображение
 
+localStorage.clear();
 
 let step = 48;
 let score = 0;
@@ -87,12 +89,12 @@ function draw_elements() {
         ctx.fillStyle = "red";
         ctx.fillRect(snake[0].x, snake[0].y, step, step);
         /////clearInterval(game);
-
-
+        saveGame(score);
+        localStorage.getItem("score")
         //setTimeout(function () {
         //    alert("GAME OVER!");
         //}, 10);
-        //document.location.reload();
+        document.location.reload();
         ////clearInterval(game);
 
     }
@@ -123,7 +125,8 @@ function draw_elements() {
         //setTimeout(function () {
         //    alert("GAME OVER!");
         //}, 10);
-        //document.location.reload();
+        saveGame();
+        document.location.reload();
         ///clearInterval(game);
 
     }
@@ -154,11 +157,11 @@ function draw_elements() {
 
 
     if (eatTail(newHead, snake) || edge(newHead)) {
-        var xhttp = new XMLHttpRequest();
 
         //setTimeout(function () {
         //    alert("GAME OVER!");
         //}, 10);
+        saveGame();
         document.location.reload();
         //clearInterval(game);
 
@@ -184,6 +187,22 @@ function draw_elements() {
 
 }
 
-let game = setInterval(draw_elements, 150) //каждые 100 мс будет перерисовавоться фон
+let game = setInterval(draw_elements, 100) //каждые 100 мс будет перерисовавоться фон
+
+function saveGame(score) {
+    ////var xhttp = new XMLHttpRequest();
+    ////xhttp.onlyreadystatechange = function () {
+    ////    if (this.readyState == 4 && this.status == 200) {
+    ////        console.log(score)
+    ////    }
+    ////}
+    ////xhttp.open("GET", "https://localhost:44390/Home/Test");
+    ////xhttp.send()
+    //////post('SaveGame', { score: countScore }, function () {
+    //////    location.reload();
+    //////});
+    localStorage.setItem("score", score)
+
+}
 
 

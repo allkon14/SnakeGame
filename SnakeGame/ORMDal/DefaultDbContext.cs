@@ -3,12 +3,11 @@ using System;
 
 namespace ORMDal
 {
-    public class DefaultDbContext : DbContext
+    public partial class DefaultDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
 
-        public virtual DbSet<Games> Games { get; set; }
-        public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<Game> Games { get; set; }
 
         public DefaultDbContext()
         {
@@ -22,43 +21,35 @@ namespace ORMDal
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //Database.EnsureCreated();
                 optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Integrated security=True;Initial Catalog=SnakeGame");
-
-
-                //optionsBuilder.UseSqlServer("Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SnakeGame;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Integrated security=True;Initial Catalog=SnakeGame");
-                //    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=SnakeGame;Trusted_Connection=True;"
-
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Games>(entity =>
-            //{
-            //    entity.HasOne(d => d.User)
-            //        .WithMany(p => p.Games)
-            //        .HasForeignKey(d => d.Name)
-            //        .OnDelete(DeleteBehavior.ClientSetNull)
-            //        .HasConstraintName("FK_Games_Name");
-            //});
-
-            modelBuilder.Entity<Orders>(entity =>
+            modelBuilder.Entity<Game>(entity =>
             {
-                entity.HasNoKey();
+                entity.Property(e => e.GameDate).HasColumnType("datetime");
 
-                entity.Property(e => e.Id).ValueGeneratedOnAdd();
-
-                entity.Property(e => e.Name).IsRequired();
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Game)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK_Games_Name");
             });
 
-            modelBuilder.Entity<Users>(entity =>
+           
+
+            modelBuilder.Entity<User>(entity =>
             {
                 entity.Property(e => e.Name).IsRequired();
+                entity.Property(e => e.Password).IsRequired();
+
+
+
             });
 
-            //OnModelCreatingPartial(modelBuilder);
+            OnModelCreatingPartial(modelBuilder);
         }
 
-        //partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

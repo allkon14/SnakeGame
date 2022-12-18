@@ -1,5 +1,6 @@
 using BL;
 using DAL;
+using Entities;
 using Interfaces;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -45,9 +46,11 @@ namespace SnakeGame
 
             services.AddTransient<IUsersDal, OrmUsersDal>();
             services.AddTransient<IUsersBL, UsersBL>();
+            services.AddTransient<IGameDal, OrmGamesDal>();
+            services.AddTransient<IGameBL, GameBL>();
 
 
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

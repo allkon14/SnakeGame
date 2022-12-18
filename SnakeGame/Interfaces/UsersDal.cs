@@ -9,5 +9,6 @@ namespace Interfaces
         User GetById(int id);
         User GetByLogin(string login);
         List<User> GetAllUsers();
+        void PutUser(User user);
     }
 }

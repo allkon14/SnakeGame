@@ -1,8 +1,9 @@
-﻿
+﻿@model SnakeGame.Models.Games.GameModel
 @{
     ViewData["Title"] = "Snake-game";
     Layout = null;
 }
+
 <!DOCTYPE html>
 <html lang="ru" overflow: auto;>
 <head>
@@ -34,19 +35,31 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Test">Test</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Test">Game</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <button type="submit" class="btn btn-primary btn-block" onclick="saveGame();">Сохранить игру</button>
 
     <canvas id="game" width="1920" height="1040"></canvas>
     <canvas id="canvas"></canvas>
     <script src="~/js/snake.js"></script>
 
+
+    <script var item=localStorage.getItem("score")</script>
+
+    <script>
+            function saveGame()
+            {
+            $.post('SaveGame', {score: localStorage.getItem("score")}, function(){
+            location.reload();
+            });
+            }
+            </script>
 </body>
 </html>

@@ -196,3 +196,4 @@ C:\SnakeGame\SnakeGame\SnakeGame\SnakeGame\obj\Debug\netcoreapp3.1\SnakeGame.csp
 C:\SnakeGame\SnakeGame\SnakeGame\SnakeGame\obj\Debug\netcoreapp3.1\SnakeGame.dll
 C:\SnakeGame\SnakeGame\SnakeGame\SnakeGame\obj\Debug\netcoreapp3.1\SnakeGame.pdb
 C:\SnakeGame\SnakeGame\SnakeGame\SnakeGame\obj\Debug\netcoreapp3.1\SnakeGame.genruntimeconfig.cache
+C:\SnakeGame\SnakeGame\SnakeGame\SnakeGame\obj\Debug\netcoreapp3.1\Razor\Views\Home\Game.cshtml.g.cs

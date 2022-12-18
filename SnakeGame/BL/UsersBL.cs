@@ -28,5 +28,9 @@ namespace BL
         {
             return _dal.GetAllUsers();
         }
+        public void PutUser(User user)
+        {
+            _dal.PutUser(user);
+        }
     }
 }

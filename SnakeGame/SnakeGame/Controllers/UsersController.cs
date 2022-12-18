@@ -27,7 +27,7 @@ namespace SnakeGame.Controllers
 
         public IActionResult Index()
         {
-            var users = _bl.GetAllUsers();
+            //var users = _bl.GetAllUsers();
 
             //if (users != null)
             //{
@@ -37,21 +37,39 @@ namespace SnakeGame.Controllers
             //{
             //    return View();
             //}
-            return View(users);
+            //return View(users);
+            return View();
         }
+
+        
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Reg(RegModel regModel)
+        {
+            User newUser = new User()
+            {
+                Name = regModel.Login,
+                Password = regModel.Password,
+            };
+            _bl.PutUser(newUser);
+            var identity = new CustomUserIdentity(newUser);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+           // return RedirectToAction("Test", "Home");
+            return RedirectToAction("Game", "Home");
+
+        }
+
+
 
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        }
-        
-
         [HttpPost]
         public async Task<IActionResult> Login(LoginModel loginModel)
         {
@@ -61,7 +79,7 @@ namespace SnakeGame.Controllers
             {
                 var identity = new CustomUserIdentity(user);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
-                return RedirectToAction("Test", "Home");
+                return RedirectToAction("Game", "Home"); ////
 
             }
             return RedirectToAction("Login", "Users");
@@ -75,7 +93,7 @@ namespace SnakeGame.Controllers
 
             if (user != null)
             {
-                return View(new UserModel() { Id = user.Id, FullName = $"{user.Name} {user.Password}" });
+                return View(new UserModel() { Id = user.Id, Name = $"{user.Name}" });
             }
             else
             {
@@ -99,43 +117,5 @@ namespace SnakeGame.Controllers
             }
 
         }
-
-
-
-        //public IDbConnection Connection
-        //{
-        //    get
-        //    {
-        //        return UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Integrated security=True;Initial Catalog=SnakeGame");
-
-        //    }
-        //}
-
-        //private List<User> GetAllUsers()
-        //{
-        //    using(IDbConnection db = Connection)
-        //    {
-
-        //    }
-        //}
-
-
-        // public IActionResult Save() => PartialView();
-
-
-        //[HttpGet]
-        //public ActionResult Register()
-        //{
-        //    var newUser = new User();
-        //    return View(newUser);
-        //}
-
-        //[HttpPost]
-        //public ActionResult Register(User user)
-        //{
-        //    return View(user);
-        //}
-
-
     }
 }

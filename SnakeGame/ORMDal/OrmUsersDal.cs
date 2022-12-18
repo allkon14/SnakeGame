@@ -13,6 +13,7 @@ namespace ORMDal
             var context = new DefaultDbContext();
             try
             {
+                ////Users - название таблицы
                 var user = context.Users.FirstOrDefault(item => item.Name == login);
 
                 if (user == null)
@@ -22,10 +23,9 @@ namespace ORMDal
                 var entity = new Entities.User()
                 {
                     Id = user.Id,
-                    Age = user.Age,
                     Name = user.Name,
-                    Phone = user.Phone,
                     Password = user.Password
+                    
                 };
                 return entity;
             }
@@ -49,9 +49,7 @@ namespace ORMDal
                 var entity = new Entities.User()
                 {
                     Id = user.Id,
-                    Age = user.Age,
                     Name = user.Name,
-                    Phone = user.Phone,
                     Password = user.Password
                 };
                 return entity;
@@ -90,9 +88,7 @@ namespace ORMDal
                     var entity = new Entities.User()
                     {
                         Id = item.Id,
-                        Age = item.Age,
                         Name = item.Name,
-                        Phone = item.Phone,
                         Password = item.Password
                     };
                     entities.Add(entity);
@@ -105,6 +101,25 @@ namespace ORMDal
             }
         }
 
-        
+        public void PutUser(Entities.User user)
+        {
+            var context = new DefaultDbContext();
+            try
+            {
+                ////Games -> Game
+                context.Users.Add(new User()
+                {
+                    Id = user.Id,
+                    Name = user.Name,
+                    Password = user.Password
+
+                });
+                context.SaveChanges();
+            }
+            finally
+            {
+                context.Dispose();
+            }
+        }
     }
 }
