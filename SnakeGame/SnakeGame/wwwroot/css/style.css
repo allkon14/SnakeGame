@@ -1,6 +1,12 @@
 ﻿canvas {
     display: block;
     margin: 0 auto;
+
+    position: relative;
+        top: 82px; /* Расстояние от верхнего края */
+        left: 0px; /* Расстояние от левого края */
+        bottom: 0;
+        right: 0;
 }
 
 ('html, body').css({
